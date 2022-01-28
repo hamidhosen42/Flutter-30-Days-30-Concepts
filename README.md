@@ -6,6 +6,7 @@ A new Flutter project.
 
 1. Container and SizedBox in Flutter - day1
 2. Rows, Columns and Wrap in Flutter - day2
+3. Text Button and Elevated Button - day3
 
 ## Getting Started
 
