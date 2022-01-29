@@ -8,6 +8,7 @@ A new Flutter project.
 2. Rows, Columns and Wrap in Flutter - day2
 3. Text Button and Elevated Button - day3
 4. ListView and GridView in Flutter - day4
+5. SnackBar in Flutter - day5
 
 ## Getting Started
 
