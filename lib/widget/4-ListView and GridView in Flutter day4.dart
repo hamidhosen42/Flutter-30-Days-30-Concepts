@@ -29,7 +29,7 @@ class _ListGridState extends State<ListGrid> {
       appBar: AppBar(
         title: Text("ListView and GridView in Flutter"),
         elevation: 0,
-        centerTitle: true,
+        centerTitle: true, 
       ),
       // ---GridViewBuilder-----------------
       body: GridView.builder(
