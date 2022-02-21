@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../authentication/authFunction.dart';
+import '../authentication/24-authFunction day24.dart';
 
 class Day24Authentication extends StatefulWidget {
   const Day24Authentication({Key? key}) : super(key: key);
@@ -22,6 +22,7 @@ class _Day24AuthenticationState extends State<Day24Authentication> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Email/Pass Auth'),
+        
       ),
       body: Form(
         key: _formkey,

@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'widget/1-Container and SizedBox day1.dart';
@@ -16,7 +17,11 @@ import 'widget/19-Cloning a UI in Flutter day19.dart';
 import 'widget/2-Rows, Columns and Wrap day2.dart';
 import 'widget/20-Cloning Complex UI in Flutter day20.dart';
 import 'widget/24-Firebase Authentication in Flutter Email-Password day24.dart';
+import 'widget/25,26-Flutter with Firebase Cloud Store  CRUD Operations Part1 day25,26.dart';
+import 'widget/28-Encrypt Strings in Flutter  Password  Chat Messages day28.dart';
+import 'widget/29-Get Current Location in Flutter , geocoding , geolocator plugins day29.dart';
 import 'widget/3-Text Button and Elevated Button day3.dart';
+import 'widget/31-Shimmer Effect in Flutter , Show Animated Loading of Content in Flutter day31.dart';
 import 'widget/4-ListView and GridView in Flutter day4.dart';
 import 'widget/5-SnackBar in Flutter day5.dart';
 import 'widget/6-Dismissible in Flutter day6.dart';
@@ -62,7 +67,27 @@ class MyApp extends StatelessWidget {
       // home: LocationWidget(),
       // home: UiClone(),
       // home: InstraCloneUi(),
-      home: Day24Authentication(),
+      // home: Day24Authentication(),
+      // home: FirebaseCloudStore(),
+
+      /* // -----day-25,26
+      home: StreamBuilder(
+        stream: FirebaseAuth.instance.authStateChanges(),
+        builder: (context,snapshot){
+          if(snapshot.hasData)
+          {
+            return FirebaseCloudStore();
+          }
+          else
+          {
+            return Day24Authentication();
+          }
+        },
+      ), */
+
+      // home: EncryptString(),
+      // home: Geocoding(),
+      home: ShimmerEffect(),
     );
   }
 }
